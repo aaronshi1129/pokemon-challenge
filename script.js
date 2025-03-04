@@ -128,19 +128,19 @@ function showEndGame() {
     
     let achievement = '';
     if (score >= 20) {
-        achievement = 'Pokemon Master';
+        achievement = '🥇Pokemon Master';
     } else if (score >= 15) {
-        achievement = 'Ace Trainer';
+        achievement = '🥈Ace Trainer';
     } else if (score >= 10) {
-        achievement = 'Qualified Pokemon Trainer';
+        achievement = '🥉Qualified Pokemon Trainer';
     } else {
-        achievement = 'Novice Pokemon Trainer';
+        achievement = '💖Novice Pokemon Trainer';
     }
     
     document.getElementById('final-score').textContent = score;
     document.getElementById('achievement').textContent = achievement;
     document.getElementById('completion-message').textContent = 
-        `Congratulations! You successfully identified ${score} Pokemons within 2 minutes. You are now recognized as a ${achievement}!`;
+        `🎊 Congratulations! You successfully identified ${score} Pokemons within 2 minutes. 🎉You are now recognized as a ${achievement}!👍`;
 }
 
 function startGame() {
