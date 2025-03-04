@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>Pokemon Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loading" id="loading">
+        <div class="pokeball"></div>
+    </div>
+    <div class="quiz-container">
+        <div class="start-screen">
+            <h1>Pokemon Challenge</h1>
+            <div class="how-to-play">
+                <h2>How to Play:</h2>
+                <ul>
+                    <li>You have 2 minutes to identify as many Pokemons as possible</li>
+                    <li>Choose the correct name from four options</li>
+                    <li>Score points for each correct answer</li>
+                    <li>Aim for Pokemon Master rank by scoring over 20 points!</li>
+                </ul>
+            </div>
+            <button id="start-btn" class="start-btn">Start Quiz</button>
+        </div>
+
+        <div class="quiz-content">
+            <h1>Pokemon Challenge</h1>
+            <div class="timer">Time: <span id="timer">02:00</div>
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="question-counter">Question #<span id="question-number">0</span></div>
+            <div class="pokemon-display">
+                <img id="pokemon-image" src="" alt="Pokemon silhouette">
+            </div>
+            <div class="options-container" id="options">
+                <!-- Options will be populated by JavaScript -->
+            </div>
+            <button id="next-question" class="next-btn">Next Pokemon</button>
+        </div>
+    </div>
+
+    <div class="modal" id="end-modal">
+        <div class="modal-content">
+            <h2>Challenge Completed!</h2>
+            <p>Your Score: <span id="final-score">0</span></p>
+            <div class="achievement" id="achievement"></div>
+            <p id="completion-message"></p>
+            <button id="play-again" class="play-again-btn">Play Again</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        Author: Aaron Shi. Released in March 2025. Images: PokeAPI.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
